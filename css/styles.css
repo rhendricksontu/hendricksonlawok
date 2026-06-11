@@ -8,8 +8,8 @@
   --black: #000000;
   --gold: #b8922a;          /* brand gold (disciplemission.com) - accents, button text on black */
   --gold-light: #d4b06a;    /* lighter gold - fading dividers */
-  --gold-deep: #8a6f1f;     /* darker gold - graphic accents */
-  --gold-ink: #7a5c2e;      /* readable gold-brown TEXT on white (small labels, links) */
+  --gold-deep: #b8922a;     /* brand gold (unified) */
+  --gold-ink: #b8922a;      /* brand gold for gold-toned text (unified) */
   --ink: #1a1a1a;
   --charcoal: #2a2a2a;
   --gray: #555555;
