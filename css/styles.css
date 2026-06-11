@@ -72,19 +72,19 @@ p { margin: 0 0 1.1em; }
   cursor: pointer; transition: transform .15s ease, background .2s ease, color .2s ease, box-shadow .2s ease;
   border: 2px solid transparent; text-align: center;
 }
-.btn-gold { background: var(--gold); color: #fff; border-color: var(--gold); }
-.btn-gold:hover { background: var(--gold-deep); border-color: var(--gold-deep); transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,.18); }
-.btn-outline { background: transparent; color: var(--ink); border-color: rgba(0,0,0,.25); }
-.btn-outline:hover { background: var(--ink); color: #fff; border-color: var(--ink); transform: translateY(-2px); }
-.btn-dark { background: var(--black); color: #fff; border-color: var(--black); }
-.btn-dark:hover { background: var(--charcoal); transform: translateY(-2px); }
+.btn-gold { background: var(--black); color: var(--gold); border-color: var(--black); }
+.btn-gold:hover { background: var(--charcoal); color: var(--gold); border-color: var(--charcoal); transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,.2); }
+.btn-outline { background: var(--black); color: var(--gold); border-color: var(--black); }
+.btn-outline:hover { background: var(--charcoal); color: var(--gold); border-color: var(--charcoal); transform: translateY(-2px); }
+.btn-dark { background: var(--black); color: var(--gold); border-color: var(--black); }
+.btn-dark:hover { background: var(--charcoal); color: var(--gold); transform: translateY(-2px); }
 .btn-lg { padding: 16px 36px; font-size: 1rem; }
 .btn-row { display: flex; flex-wrap: wrap; gap: 14px; }
 .center .btn-row { justify-content: center; }
 
 /* ---------- Header / Nav (cream, dark text) ---------- */
 .site-header {
-  position: sticky; top: 0; z-index: 100; background: rgba(245,241,230,.92);
+  position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,.94);
   backdrop-filter: saturate(140%) blur(8px); border-bottom: 1px solid var(--line);
 }
 .header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 78px; }
@@ -97,7 +97,7 @@ p { margin: 0 0 1.1em; }
 .site-nav a { color: var(--ink); font-weight: 500; font-size: .96rem; padding: 10px 14px; display: inline-block; border-radius: var(--radius); transition: color .15s ease; }
 .site-nav a:hover { color: var(--gold-ink); }
 .site-nav .nav-cta a { margin-left: 8px; }
-.site-nav .nav-cta a.btn-gold, .site-nav .nav-cta a.btn-gold:hover { color: #fff; }
+.site-nav .nav-cta a.btn-gold, .site-nav .nav-cta a.btn-gold:hover { color: var(--gold); }
 
 .has-dropdown { position: relative; }
 .has-dropdown > a::after { content: none; }
@@ -147,7 +147,7 @@ p { margin: 0 0 1.1em; }
 .hero-card ul.checks li::before { content: "✓"; position: absolute; left: 0; color: var(--gold-ink); font-weight: 700; }
 
 /* ---------- Stat / trust bar (delineated by gold accent) ---------- */
-.statbar { background: var(--cream-2); border-top: 3px solid var(--gold); border-bottom: 1px solid var(--line); }
+.statbar { background: var(--paper); border-top: 3px solid var(--gold); border-bottom: 1px solid var(--line); }
 .statbar .container { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; padding-top: 34px; padding-bottom: 34px; }
 .stat { text-align: center; color: var(--ink); }
 .stat .num { font-family: var(--serif); font-weight: 700; font-size: 2.2rem; line-height: 1; color: var(--gold-ink); }
@@ -237,7 +237,7 @@ form textarea { min-height: 140px; resize: vertical; }
 .map-embed { width: 100%; aspect-ratio: 16/10; border: 1px solid var(--line); border-radius: 8px; margin-top: 14px; filter: grayscale(.2); }
 
 /* ---------- Footer (cream, dark text) ---------- */
-.site-footer { background: var(--cream); color: var(--gray); padding-top: 64px; border-top: 1px solid var(--line); }
+.site-footer { background: var(--paper); color: var(--gray); padding-top: 64px; border-top: 1px solid var(--line); }
 .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 40px; padding-bottom: 44px; }
 .footer-brand { color: var(--ink); font-size: 1.3rem; margin-bottom: 12px; }
 .footer-brand .amp { color: var(--gold); }
