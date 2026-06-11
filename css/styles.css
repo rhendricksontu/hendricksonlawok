@@ -66,6 +66,9 @@ p { margin: 0 0 1.1em; }
 .measure.center { margin-left: auto; margin-right: auto; }
 .gold-rule { width: 200px; max-width: 62%; height: 2px; background: linear-gradient(to right, transparent, var(--gold-light), transparent); border: 0; margin: 0 0 28px; }
 .center .gold-rule { margin-left: auto; margin-right: auto; }
+/* divider that matches the width of the heading text above it */
+.head-fit { display: inline-block; }
+.head-fit .gold-rule--full { width: 100%; max-width: none; margin: 10px 0 0; }
 
 /* ---------- Buttons ---------- */
 .btn {
