@@ -131,7 +131,8 @@ p { margin: 0 0 1.1em; }
 .hero h1 { font-family: var(--display); font-weight: 600; text-transform: uppercase; letter-spacing: .055em; font-size: clamp(1.3rem, 5.2vw, 2.7rem); line-height: 1.24; color: var(--ink); margin-bottom: .5em; overflow-wrap: break-word; }
 .hero h1 .accent { color: var(--gold); }
 .hero .lead { color: var(--gray); font-size: 1.22rem; max-width: 560px; }
-.hero-badges { display: flex; flex-wrap: wrap; gap: 10px; margin: 26px 0 30px; }
+.hero-cta { width: -moz-fit-content; width: fit-content; }
+.hero-badges { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin: 26px 0 30px; }
 .badge { font-size: .8rem; font-weight: 600; letter-spacing: .04em; color: var(--gold-ink); border: 1px solid rgba(184,146,42,.45); background: rgba(184,146,42,.07); border-radius: 999px; padding: 7px 16px; }
 .hero-card {
   background: var(--paper); border: 1px solid var(--line); border-top: 3px solid var(--gold);
