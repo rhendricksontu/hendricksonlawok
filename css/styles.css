@@ -69,6 +69,8 @@ p { margin: 0 0 1.1em; }
 /* divider that matches the width of the heading text above it */
 .head-fit { display: inline-block; }
 .head-fit .gold-rule--full { width: 100%; max-width: none; margin: 10px 0 0; }
+/* full-width divider that spans the container (aligns with card grid edges) */
+.gold-rule--wide { width: 100%; max-width: none; margin: 18px 0 36px; }
 
 /* ---------- Buttons ---------- */
 .btn {
