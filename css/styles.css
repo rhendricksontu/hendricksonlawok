@@ -21,8 +21,8 @@
   --gold-tint: #efe7d0;     /* soft warm wash for accent bands */
   --gold-tint-line: #e3dabb;
 
-  --serif: "Playfair Display", Georgia, "Times New Roman", serif;
-  --display: "Cinzel", Georgia, "Times New Roman", serif;  /* classical caps - hero + brand (disciplemission.com) */
+  --display: "Cinzel", Georgia, "Times New Roman", serif;  /* classical caps - all headings, hero + brand (disciplemission.com) */
+  --serif: Georgia, "Times New Roman", serif;              /* generic serif fallback (Playfair removed) */
   --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 
   --maxw: 1160px;
@@ -45,8 +45,8 @@ body {
 img { max-width: 100%; display: block; }
 a { color: inherit; text-decoration: none; }
 ul { margin: 0; padding: 0; list-style: none; }
-h1, h2, h3, h4 { font-family: var(--serif); font-weight: 700; line-height: 1.15; color: var(--ink); margin: 0 0 .5em; }
-h1 { font-size: clamp(2.1rem, 5vw, 3.4rem); }
+h1, h2, h3, h4 { font-family: var(--display); font-weight: 600; text-transform: uppercase; letter-spacing: .035em; line-height: 1.2; color: var(--ink); margin: 0 0 .5em; }
+h1 { font-size: clamp(1.7rem, 4.6vw, 3.2rem); }
 h2 { font-size: clamp(1.7rem, 3.5vw, 2.5rem); }
 h3 { font-size: 1.3rem; }
 p { margin: 0 0 1.1em; }
@@ -136,7 +136,7 @@ p { margin: 0 0 1.1em; }
 .hero-card .seal {
   width: 84px; height: 84px; margin: 0 auto 18px; border-radius: 50%;
   border: 2px solid var(--gold); display: grid; place-items: center;
-  font-family: var(--serif); font-weight: 700; font-size: 1.5rem; color: var(--gold-ink); letter-spacing: .04em;
+  font-family: var(--display); font-weight: 600; font-size: 1.4rem; color: var(--gold-ink); letter-spacing: .04em;
 }
 .hero-card ul.checks { margin: 16px 0 0; }
 .hero-card ul.checks li { padding: 7px 0 7px 28px; position: relative; color: var(--gray); font-size: .95rem; border-top: 1px solid var(--line); }
@@ -147,7 +147,7 @@ p { margin: 0 0 1.1em; }
 .statbar { background: var(--paper); border-top: 3px solid var(--gold); border-bottom: 1px solid var(--line); }
 .statbar .container { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; padding-top: 34px; padding-bottom: 34px; }
 .stat { text-align: center; color: var(--ink); }
-.stat .num { font-family: var(--serif); font-weight: 700; font-size: 2.2rem; line-height: 1; color: var(--gold); }
+.stat .num { font-family: var(--display); font-weight: 600; font-size: 2.1rem; line-height: 1; color: var(--gold); }
 .stat .lbl { font-size: .82rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; margin-top: 8px; color: var(--gray); }
 .stat + .stat { border-left: 1px solid var(--line); }
 
@@ -175,7 +175,7 @@ p { margin: 0 0 1.1em; }
   aspect-ratio: 4/5; background: radial-gradient(120% 120% at 30% 10%, #222 0%, #000 70%);
   border-radius: 8px; border: 1px solid #e2dccc; display: grid; place-items: center; position: relative; box-shadow: var(--shadow);
 }
-.portrait .mono { width: 130px; height: 130px; border-radius: 50%; border: 3px solid var(--gold); display: grid; place-items: center; font-family: var(--serif); font-size: 2.6rem; font-weight: 700; color: var(--gold); }
+.portrait .mono { width: 130px; height: 130px; border-radius: 50%; border: 3px solid var(--gold); display: grid; place-items: center; font-family: var(--display); font-size: 2.4rem; font-weight: 600; color: var(--gold); }
 .portrait .tag { position: absolute; bottom: 18px; left: 18px; right: 18px; text-align: center; color: #cfcfcf; font-size: .8rem; letter-spacing: .04em; }
 .portrait .photo-note { position: absolute; top: 14px; right: 14px; font-size: .62rem; letter-spacing: .12em; text-transform: uppercase; color: #999; border: 1px dashed #666; padding: 4px 8px; border-radius: 3px; }
 
