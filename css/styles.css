@@ -89,7 +89,9 @@ p { margin: 0 0 1.1em; }
   backdrop-filter: saturate(140%) blur(6px); border-bottom: 1px solid rgba(138,108,0,.22);
 }
 .header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 78px; }
-.brand { display: flex; flex-direction: column; align-items: center; text-align: center; line-height: 1; padding: 8px 0; }
+.brand { display: flex; flex-direction: row; align-items: center; gap: 11px; line-height: 1; padding: 8px 0; }
+.brand-icon { width: 40px; height: 40px; flex-shrink: 0; }
+.brand-text { display: flex; flex-direction: column; align-items: center; text-align: center; line-height: 1; }
 .brand-mark { font-family: var(--serif); font-weight: 700; font-size: 1.42rem; letter-spacing: .02em; color: #fff; }
 .brand-mark .amp { color: var(--gold); }
 .brand-sub { font-family: var(--sans); font-size: .64rem; letter-spacing: .26em; text-transform: uppercase; color: var(--gold); margin-top: 6px; }
