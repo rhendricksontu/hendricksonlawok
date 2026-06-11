@@ -1,0 +1,8 @@
+# Internal strategy doc — keep local, do not publish
+PRACTICE-BRIEF.md
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/

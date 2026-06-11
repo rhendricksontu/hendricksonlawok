@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hendricksonlawok.com/sitemap.xml
