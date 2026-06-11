@@ -1,4 +1,4 @@
-/* Hendrickson Law — site interactions */
+/* Hendrickson Law - site interactions */
 (function () {
   "use strict";
 
@@ -59,13 +59,13 @@
         .then(function (json) {
           if (json.success) {
             form.reset();
-            if (status) { status.className = "form-status show ok"; status.textContent = "Thank you — your message has been sent. We will be in touch shortly."; }
+            if (status) { status.className = "form-status show ok"; status.textContent = "Thank you. Your message has been sent. We will be in touch shortly."; }
           } else {
             throw new Error(json.message || "Submit failed");
           }
         })
         .catch(function () {
-          if (status) { status.className = "form-status show err"; status.textContent = "Sorry — something went wrong. Please call (405) 722-8042 or email steven@hendricksonlawok.com."; }
+          if (status) { status.className = "form-status show err"; status.textContent = "Sorry, something went wrong. Please call (405) 722-8042 or email steven@hendricksonlawok.com."; }
         });
     });
   }
