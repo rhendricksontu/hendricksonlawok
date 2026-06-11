@@ -1,14 +1,14 @@
 /* =========================================================
    Hendrickson Law - hendricksonlawok.com
-   Brand palette: Black #000000 · Gold #FFCD00
+   Brand palette: Black #000000 · Dull antique gold #8a6c00
    Light sections · gold used as an accent · dark header/footer
    ========================================================= */
 
 :root {
   --black: #000000;
-  --gold: #FFCD00;          /* brand gold - fills, borders, graphic accents */
-  --gold-deep: #d9af00;     /* hover fills, stronger graphic accents */
-  --gold-ink: #8a6c00;      /* gold-toned TEXT on light backgrounds (readable) */
+  --gold: #8a6c00;          /* dull antique gold - fills, borders, graphic accents */
+  --gold-deep: #6f5700;     /* darker dull gold - hover fills */
+  --gold-ink: #8a6c00;      /* gold-toned TEXT on light backgrounds */
   --ink: #1a1a1a;
   --charcoal: #2a2a2a;
   --gray: #555555;
@@ -17,8 +17,8 @@
   --paper: #ffffff;
   --cream: #f8f7f4;
   --cream-2: #f2f1ec;
-  --gold-tint: #fbf4dc;     /* very soft gold wash for accent bands */
-  --gold-tint-line: #efe2ad;
+  --gold-tint: #f4efe0;     /* very soft warm wash for accent bands */
+  --gold-tint-line: #e3dabb;
 
   --serif: "Playfair Display", Georgia, "Times New Roman", serif;
   --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -86,7 +86,7 @@ p { margin: 0 0 1.1em; }
 /* ---------- Header / Nav (stays dark) ---------- */
 .site-header {
   position: sticky; top: 0; z-index: 100; background: rgba(0,0,0,.97);
-  backdrop-filter: saturate(140%) blur(6px); border-bottom: 1px solid rgba(255,205,0,.22);
+  backdrop-filter: saturate(140%) blur(6px); border-bottom: 1px solid rgba(138,108,0,.22);
 }
 .header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 78px; }
 .brand { display: flex; flex-direction: column; align-items: center; text-align: center; line-height: 1; padding: 8px 0; }
@@ -104,13 +104,13 @@ p { margin: 0 0 1.1em; }
 .has-dropdown > a::after { content: none; }
 .dropdown {
   position: absolute; top: 100%; left: 0; min-width: 248px; background: #111;
-  border: 1px solid rgba(255,205,0,.2); border-top: 2px solid var(--gold);
+  border: 1px solid rgba(138,108,0,.2); border-top: 2px solid var(--gold);
   box-shadow: var(--shadow-lg); padding: 8px; opacity: 0; visibility: hidden;
   transform: translateY(8px); transition: all .18s ease; border-radius: 0 0 var(--radius) var(--radius);
 }
 .has-dropdown:hover .dropdown, .has-dropdown:focus-within .dropdown { opacity: 1; visibility: visible; transform: translateY(0); }
 .dropdown a { display: block; padding: 11px 14px; font-size: .92rem; border-radius: var(--radius); }
-.dropdown a:hover { background: rgba(255,205,0,.1); color: var(--gold); }
+.dropdown a:hover { background: rgba(138,108,0,.1); color: var(--gold); }
 
 .nav-toggle { display: none; flex-direction: column; gap: 5px; background: none; border: 0; cursor: pointer; padding: 10px; }
 .nav-toggle span { width: 26px; height: 2px; background: var(--gold); transition: .25s; }
@@ -122,7 +122,7 @@ p { margin: 0 0 1.1em; }
 .hero { position: relative; background: radial-gradient(130% 120% at 85% -10%, #fffdf6 0%, #f5f1e6 75%); color: var(--ink); overflow: hidden; border-bottom: 1px solid var(--line); }
 .hero::before {
   content: ""; position: absolute; inset: 0;
-  background-image: linear-gradient(135deg, rgba(255,205,0,.16) 0%, transparent 38%),
+  background-image: linear-gradient(135deg, rgba(138,108,0,.16) 0%, transparent 38%),
     repeating-linear-gradient(45deg, rgba(0,0,0,.018) 0 2px, transparent 2px 22px);
   pointer-events: none;
 }
@@ -131,7 +131,7 @@ p { margin: 0 0 1.1em; }
 .hero h1 .accent { color: var(--gold-ink); }
 .hero .lead { color: var(--gray); font-size: 1.22rem; max-width: 560px; }
 .hero-badges { display: flex; flex-wrap: wrap; gap: 10px; margin: 26px 0 30px; }
-.badge { font-size: .8rem; font-weight: 600; letter-spacing: .04em; color: var(--gold-ink); border: 1px solid rgba(217,175,0,.55); background: rgba(255,205,0,.10); border-radius: 999px; padding: 7px 16px; }
+.badge { font-size: .8rem; font-weight: 600; letter-spacing: .04em; color: var(--gold-ink); border: 1px solid rgba(138,108,0,.55); background: rgba(138,108,0,.10); border-radius: 999px; padding: 7px 16px; }
 .hero-card {
   background: #fff; border: 1px solid #ece7d5; border-top: 3px solid var(--gold);
   border-radius: 8px; padding: 34px; box-shadow: var(--shadow-lg);
@@ -222,7 +222,7 @@ form input, form select, form textarea {
   width: 100%; padding: 13px 14px; border: 1px solid #d6d6d2; border-radius: var(--radius);
   font-family: var(--sans); font-size: 1rem; background: #fff; transition: border .15s ease, box-shadow .15s ease;
 }
-form input:focus, form select:focus, form textarea:focus { outline: none; border-color: var(--gold); box-shadow: 0 0 0 3px rgba(255,205,0,.25); }
+form input:focus, form select:focus, form textarea:focus { outline: none; border-color: var(--gold); box-shadow: 0 0 0 3px rgba(138,108,0,.25); }
 form textarea { min-height: 140px; resize: vertical; }
 .form-note { font-size: .82rem; color: var(--gray-light); margin-top: 4px; }
 .form-status { margin-top: 14px; font-weight: 600; display: none; }
@@ -258,7 +258,7 @@ form textarea { min-height: 140px; resize: vertical; }
   .site-nav.open { max-height: 90vh; overflow-y: auto; }
   .site-nav > ul { flex-direction: column; align-items: stretch; gap: 0; padding: 8px 16px 20px; }
   .site-nav > ul > li > a { padding: 14px 8px; border-bottom: 1px solid rgba(255,255,255,.07); }
-  .dropdown { position: static; opacity: 1; visibility: visible; transform: none; box-shadow: none; border: 0; background: rgba(255,205,0,.05); padding: 0 0 6px 14px; }
+  .dropdown { position: static; opacity: 1; visibility: visible; transform: none; box-shadow: none; border: 0; background: rgba(138,108,0,.05); padding: 0 0 6px 14px; }
   .nav-cta a { margin: 12px 0 0 !important; display: block; }
   .statbar .container { grid-template-columns: repeat(2, 1fr); gap: 24px 12px; }
   .stat:nth-child(3) { border-left: 0; }
