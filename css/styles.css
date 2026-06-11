@@ -87,7 +87,7 @@ p { margin: 0 0 1.1em; }
   backdrop-filter: saturate(140%) blur(6px); border-bottom: 1px solid rgba(255,205,0,.22);
 }
 .header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 78px; }
-.brand { display: flex; flex-direction: column; line-height: 1; padding: 8px 0; }
+.brand { display: flex; flex-direction: column; align-items: center; text-align: center; line-height: 1; padding: 8px 0; }
 .brand-mark { font-family: var(--serif); font-weight: 700; font-size: 1.42rem; letter-spacing: .02em; color: #fff; }
 .brand-mark .amp { color: var(--gold); }
 .brand-sub { font-family: var(--sans); font-size: .64rem; letter-spacing: .26em; text-transform: uppercase; color: var(--gold); margin-top: 6px; }
@@ -96,9 +96,10 @@ p { margin: 0 0 1.1em; }
 .site-nav a { color: #ececec; font-weight: 500; font-size: .96rem; padding: 10px 14px; display: inline-block; border-radius: var(--radius); transition: color .15s ease; }
 .site-nav a:hover { color: var(--gold); }
 .site-nav .nav-cta a { margin-left: 8px; }
+.site-nav .nav-cta a.btn-gold, .site-nav .nav-cta a.btn-gold:hover { color: #000; }
 
 .has-dropdown { position: relative; }
-.has-dropdown > a::after { content: "▾"; font-size: .7em; margin-left: 6px; color: var(--gold); }
+.has-dropdown > a::after { content: none; }
 .dropdown {
   position: absolute; top: 100%; left: 0; min-width: 248px; background: #111;
   border: 1px solid rgba(255,205,0,.2); border-top: 2px solid var(--gold);
