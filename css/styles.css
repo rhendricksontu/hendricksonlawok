@@ -223,7 +223,7 @@ p { margin: 0 0 1.1em; }
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
 .info-block { margin-bottom: 26px; }
 .info-block h4 { font-family: var(--sans); text-transform: uppercase; letter-spacing: .1em; font-size: .76rem; color: var(--gold-ink); margin: 0 0 6px; }
-.info-block a { font-weight: 600; }
+.info-block a { font-weight: 400; }
 .info-block a:hover { color: var(--gold-ink); }
 form .field { margin-bottom: 18px; }
 form label { display: block; font-weight: 600; font-size: .88rem; margin-bottom: 7px; }
