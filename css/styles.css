@@ -77,8 +77,10 @@ p { margin: 0 0 1.1em; }
   display: inline-block; font-family: var(--sans); font-weight: 600; font-size: .95rem;
   letter-spacing: .02em; padding: 14px 28px; border-radius: var(--radius);
   cursor: pointer; transition: transform .15s ease, background .2s ease, color .2s ease, box-shadow .2s ease;
-  border: 2px solid transparent; text-align: center;
+  border: 2px solid transparent; text-align: center; min-width: 305px;
 }
+/* header nav button stays compact */
+.site-nav .nav-cta a.btn { min-width: 0; }
 .btn-gold { background: var(--black); color: var(--gold); border-color: var(--black); }
 .btn-gold:hover { background: var(--charcoal); color: var(--gold); border-color: var(--charcoal); transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,.2); }
 .btn-outline { background: var(--black); color: var(--gold); border-color: var(--black); }
@@ -283,5 +285,7 @@ form textarea { min-height: 140px; resize: vertical; }
   .grid-3, .grid-2 { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
   .stat:nth-child(odd) { border-left: 0; }
-  .cta-band .container { flex-direction: column; align-items: flex-start; }
+  .btn { min-width: 0; }
+  .btn-row { flex-direction: column; }
+  .btn-row .btn { width: 100%; }
 }
