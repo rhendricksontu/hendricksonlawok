@@ -237,7 +237,7 @@ form textarea { min-height: 140px; resize: vertical; }
 
 /* ---------- Footer (cream, dark text) ---------- */
 .site-footer { background: var(--paper); color: var(--gray); padding-top: 64px; border-top: 1px solid var(--line); }
-.footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 40px; padding-bottom: 44px; }
+.footer-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; padding-bottom: 44px; text-align: center; }
 .footer-brand { color: var(--ink); font-size: 1.3rem; margin-bottom: 12px; }
 .footer-brand .amp { color: var(--gold); }
 .site-footer h4 { color: var(--ink); font-family: var(--sans); font-size: .82rem; letter-spacing: .12em; text-transform: uppercase; margin: 0 0 14px; }
