@@ -270,6 +270,10 @@ form textarea { min-height: 140px; resize: vertical; }
   .contact-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
 }
+/* in 2-column mode, center a lone last card (e.g. 3rd "Why" card) */
+@media (min-width: 561px) and (max-width: 960px) {
+  .grid-3 > .card:nth-child(odd):last-child { grid-column: 1 / -1; max-width: calc(50% - 12px); margin-left: auto; margin-right: auto; }
+}
 @media (max-width: 860px) {
   .nav-toggle { display: flex; }
   .site-nav { position: fixed; inset: 78px 0 auto 0; background: var(--paper); border-bottom: 2px solid var(--gold); max-height: 0; overflow: hidden; transition: max-height .3s ease; }
