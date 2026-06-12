@@ -208,6 +208,9 @@ p { margin: 0 0 1.1em; }
 .prose h3 { margin-top: 1.5em; color: var(--gold-ink); }
 .prose ul.ticks li { position: relative; padding: 8px 0 8px 30px; border-bottom: 1px solid var(--line); color: var(--gray); }
 .prose ul.ticks li::before { content: "✓"; position: absolute; left: 0; color: var(--gold-ink); font-weight: 700; }
+/* centered checklist variant */
+.prose ul.ticks--center li { padding: 7px 0; color: var(--gray); }
+.prose ul.ticks--center li::before { content: "✓"; color: var(--gold); font-weight: 700; margin-right: 9px; }
 .aside-card { background: var(--paper); border: 1px solid var(--line); border-left: 3px solid var(--gold); border-radius: 6px; padding: 28px; box-shadow: var(--shadow); }
 .aside-card.glance { box-shadow: none; }
 .aside-card h3 { margin-top: 0; color: var(--ink); }
