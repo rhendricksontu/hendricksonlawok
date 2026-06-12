@@ -127,10 +127,12 @@ p { margin: 0 0 1.1em; }
 /* ---------- Hero (inherits cream background) ---------- */
 .hero { position: relative; background: transparent; color: var(--ink); overflow: hidden; }
 /* hero uses a plain white background (no overlay) */
-.hero-inner { position: relative; display: grid; grid-template-columns: 1.25fr .9fr; gap: 48px; align-items: center; padding: 96px 0 100px; }
+.hero-inner { position: relative; padding: 96px 0 100px; }
+.hero-text { max-width: 780px; margin: 0 auto; text-align: center; }
+.hero-text .btn-row { justify-content: center; }
 .hero h1 { font-family: var(--display); font-weight: 600; text-transform: uppercase; letter-spacing: .055em; font-size: clamp(1.3rem, 5.2vw, 2.7rem); line-height: 1.24; color: var(--ink); margin-bottom: .5em; overflow-wrap: break-word; }
 .hero h1 .accent { color: var(--gold); }
-.hero .lead { color: var(--gray); font-size: 1.22rem; max-width: 560px; }
+.hero .lead { color: var(--gray); font-size: 1.22rem; max-width: 600px; margin-left: auto; margin-right: auto; }
 .hero-cta { width: -moz-fit-content; width: fit-content; }
 .hero-badges { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin: 26px 0 30px; }
 .badge { font-size: .8rem; font-weight: 600; letter-spacing: .04em; color: var(--gold-ink); border: 1px solid rgba(184,146,42,.45); background: rgba(184,146,42,.07); border-radius: 999px; padding: 7px 16px; }
