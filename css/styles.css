@@ -287,6 +287,7 @@ form textarea { min-height: 140px; resize: vertical; }
   .section { padding: 60px 0; }
   .grid-3, .grid-2 { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
+  .copy .rights { display: block; }
   .stat:nth-child(odd) { border-left: 0; }
   .btn { min-width: 0; width: 100%; }
   .btn-row { flex-direction: column; }
