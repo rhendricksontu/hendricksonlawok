@@ -186,7 +186,7 @@ p { margin: 0 0 1.1em; }
 .portrait .photo-note { position: absolute; top: 14px; right: 14px; font-size: .62rem; letter-spacing: .12em; text-transform: uppercase; color: #999; border: 1px dashed #666; padding: 4px 8px; border-radius: 3px; }
 
 /* ---------- CTA band (soft warm accent) ---------- */
-.cta-band { background: var(--paper); color: var(--ink); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.cta-band { background: var(--paper); color: var(--ink); border-bottom: 1px solid var(--line); }
 .cta-band .container { text-align: center; padding-top: 56px; padding-bottom: 56px; }
 .cta-band h2 { color: var(--ink); margin-bottom: .3em; }
 .cta-band p { color: var(--gray); margin: 0 auto; max-width: 600px; }
