@@ -129,7 +129,7 @@ p { margin: 0 0 1.1em; }
 /* ---------- Hero (inherits cream background) ---------- */
 .hero { position: relative; background: transparent; color: var(--ink); overflow: hidden; }
 /* hero uses a plain white background (no overlay) */
-.hero-inner { position: relative; padding: 96px 0 100px; }
+.hero-inner { position: relative; padding: 96px 24px 100px; }
 .hero-text { max-width: 780px; margin: 0 auto; text-align: center; }
 .hero-text .btn-row { justify-content: center; }
 .hero h1 { font-family: var(--display); font-weight: 600; text-transform: uppercase; letter-spacing: .055em; font-size: clamp(1.3rem, 5.2vw, 2.7rem); line-height: 1.24; color: var(--ink); margin-bottom: .5em; overflow-wrap: break-word; }
@@ -263,7 +263,7 @@ form textarea { min-height: 140px; resize: vertical; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 960px) {
-  .hero-inner { grid-template-columns: 1fr; gap: 36px; padding: 64px 0 72px; }
+  .hero-inner { padding: 64px 24px 72px; }
   .split { grid-template-columns: 1fr; gap: 36px; }
   .content-grid { grid-template-columns: 1fr; }
   .grid-3 { grid-template-columns: repeat(2, 1fr); }
@@ -287,7 +287,7 @@ form textarea { min-height: 140px; resize: vertical; }
   .grid-3, .grid-2 { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
   .stat:nth-child(odd) { border-left: 0; }
-  .btn { min-width: 0; }
+  .btn { min-width: 0; width: 100%; }
   .btn-row { flex-direction: column; }
-  .btn-row .btn { width: 100%; }
+  .site-nav .nav-cta a.btn { width: 100%; }
 }
