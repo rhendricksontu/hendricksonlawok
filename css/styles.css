@@ -278,7 +278,8 @@ form textarea { min-height: 140px; resize: vertical; }
   .site-nav > ul > li > a { padding: 14px 8px; border-bottom: 1px solid var(--line); }
   .dropdown { position: static; opacity: 1; visibility: visible; transform: none; box-shadow: none; border: 0; background: rgba(184,146,42,.06); padding: 0 0 6px 14px; }
   .nav-cta a { margin: 12px 0 0 !important; display: block; }
-  .statbar .container { grid-template-columns: repeat(2, 1fr); gap: 24px 12px; }
+  .statbar .container { grid-template-columns: repeat(2, 1fr); gap: 24px 18px; }
+  .stat { padding: 0 14px; }
   .stat:nth-child(3) { border-left: 0; }
 }
 @media (max-width: 560px) {
