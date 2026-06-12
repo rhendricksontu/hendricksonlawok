@@ -136,7 +136,7 @@ p { margin: 0 0 1.1em; }
 .badge { font-size: .8rem; font-weight: 600; letter-spacing: .04em; color: var(--gold-ink); border: 1px solid rgba(184,146,42,.45); background: rgba(184,146,42,.07); border-radius: 999px; padding: 7px 16px; }
 .hero-card {
   background: var(--paper); border: 1px solid var(--line); border-top: 3px solid var(--gold);
-  border-radius: 8px; padding: 34px; box-shadow: var(--shadow-lg);
+  border-radius: 8px; padding: 34px;
 }
 .hero-card h3 { color: var(--ink); font-size: 1.15rem; }
 .hero-card .seal {
