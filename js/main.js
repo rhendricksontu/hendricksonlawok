@@ -45,7 +45,7 @@
           "Name: " + name + "\nEmail: " + email + "\nPhone: " + phone +
           "\nPractice area: " + area + "\n\n" + msg
         );
-        window.location.href = "mailto:steven@hendricksonlawok.com?subject=" +
+        window.location.href = "mailto:stevehendricksonlaw@yahoo.com?subject=" +
           encodeURIComponent("Website inquiry from " + name) + "&body=" + body;
         return;
       }
@@ -65,7 +65,7 @@
           }
         })
         .catch(function () {
-          if (status) { status.className = "form-status show err"; status.textContent = "Sorry, something went wrong. Please call (405) 722-8042 or email steven@hendricksonlawok.com."; }
+          if (status) { status.className = "form-status show err"; status.textContent = "Sorry, something went wrong. Please call (405) 722-8042 or email stevehendricksonlaw@yahoo.com."; }
         });
     });
   }
